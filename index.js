@@ -4,7 +4,7 @@ const sharp = require('sharp');
 
 exports.resizeAndUpload= (data ,context)=>{
   const {bucket , name} = data;
-  const ext = name.split('.')[Key.split('.').length-1];
+  const ext = name.split('.')[key.split('.').length-1];
   const requiredFormat = ext === 'jpg' ? 'jpeg' : ext;
   console.log('name',name,'ext',ext);
 
